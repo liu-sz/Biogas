@@ -16,3 +16,4 @@ The script downloads the captured images from the remote server to the local mac
 - Improve optical character recognition (OCR) to extract more reliable readings from the images
 - Processes gas meter readings to remove outliers using statistical tools
 - Fully automate the script
+- Use `crontab` to schedule image captures instead of using `time.sleep()` in Python
