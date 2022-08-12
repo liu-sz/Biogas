@@ -10,7 +10,7 @@
 The script captures 750x750 images of the biogas meter using a RaspberryPi camera at a set time interval.
 
 ## `read_meter.py`
-The script downloads the captured images from the remote server to the local machine, and then uses [`pytesseract`](https://pypi.org/project/pytesseract/) to obtain the gas meter readings from the images. The reasonable readings are kept and added to a csv file. 
+The script downloads the captured images from the remote server to the local machine using `rsync`. Before using `rsync`, one can follow [this guide](https://www.redhat.com/sysadmin/ssh-file-copy-magic) to set up SSH to log in without having to type the password. Please contact Eric Darsow for the SSH information. The script then uses [`pytesseract`](https://pypi.org/project/pytesseract/) to obtain the gas meter readings from the images. The reasonable readings are kept and added to a csv file. 
 
 ## Future improvements
 - Improve optical character recognition (OCR) to extract more reliable readings from the images
