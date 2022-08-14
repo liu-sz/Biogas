@@ -4,7 +4,7 @@
 
 `seahorse_camera.py` and `read_meter.py` are two scripts that capture images of the biogas meter in Ecotone's system and read the gas volume from the images. The read data is then added to a `csv` file. A sample biogas volume vs time plot is shown below. 
 
-![sample_data](https://github.com/Shizhen-L/Biogas/blob/main/sampel_gas_meter_graph.png)
+![sample_data](https://github.com/Shizhen-L/Biogas/blob/main/sample_gas_meter_graph.png)
 
 ## `seahorse_camera.py`
 The script captures 750x750 images of the biogas meter using a RaspberryPi camera at a set time interval. The captured image is then uploaded to a remote server.
